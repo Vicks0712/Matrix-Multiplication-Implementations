@@ -2,9 +2,14 @@
 
 Matrix multiplication is a fundamental operation in linear algebra and is used in a variety of applications, from computer graphics to machine learning. "Tiled Matrix Multiplication" is a technique used in this project to efficiently and distributively calculate matrix multiplication. Here are some key points:
 
-## Matrices
+## How does Tiled Matrix Multiplication work?
 
-In the context of this project, we work with matrices, which are two-dimensional arrays of numbers. Matrices are divided into smaller submatrices to facilitate parallel processing.
+1. Dividing the matrices into tiles: Instead of multiplying the original matrices directly, they are divided into smaller blocks or "tiles". These tiles are stored in memory and used to perform calculations.
+![setup-2d0f22ecd2e9b7c84af56792d14ba18a](https://github.com/Vicks0712/MatrixMultiplicationImplementations/assets/90756558/1b31ec4b-cd02-44c9-a42b-6de0ee2f2fb5)
+2. Calculation of tile products: Instead of multiplying the entire matrix A by matrix B at once, the products of the individual tiles are calculated. This is done by multiplying each tile in matrix A by its respective tile in matrix B.
+3. Result accumulation: Partial results are accumulated in the output matrix (also tiled) as they are calculated. These partial results are added to obtain the final resulting matrix.
+![tmm-59dd890f48435e692c47919d0df4a5e6](https://github.com/Vicks0712/MatrixMultiplicationImplementations/assets/90756558/65aba0b4-3fe0-4e8e-a29b-0a36d387f185)
+
 
 ## Hadoop
 
