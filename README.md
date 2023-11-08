@@ -41,7 +41,7 @@ The O(n^3) complexity arises from the fact that when multiplying two n x n matri
 
 Inside each project, you will find Java source code that implements the various matrix multiplication methods or "Tiled Matrix Multiplication." You can explore and run this code to compare their performance and efficiency in different scenarios.
 
-### Personal information
+## Personal information
 I am a student currently in my last year of study at the University of Las Palmas de Gran Canaria (ULPGC). My academic focus is on data science and engineering, with a passion for research and development in the field of Deep Learning.
 
 If you want to know more about my experience and work, you can visit my LinkedIn profile https://www.linkedin.com/in/victoria-torres-rodriguez-199a67230/.
