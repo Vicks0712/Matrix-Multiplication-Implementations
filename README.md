@@ -4,6 +4,26 @@
 
 This repository focuses on matrix multiplication in the Java programming language. Matrix multiplication is a fundamental operation in linear algebra and finds a wide range of applications in fields like physics, computer science, statistics, and more. While matrix multiplication may appear as a straightforward operation, it can be scientifically complex due to numerous strategies and optimizations that can be applied.
 
+## Matrix Multiplication
+
+Matrix multiplication is a fundamental operation in linear algebra that combines two or more matrices to produce a new matrix. Although it may seem like a simple operation, it is essential in a variety of fields and applications.
+
+**Basic calculation**
+
+Given two matrices, A and B, the resulting matrix C is obtained by multiplying the elements of the rows of A by the elements of the columns of B and adding the products. Matrix multiplication is not commutative, meaning that the order in which matrices are multiplied matters.
+
+Matrix multiplication is defined as follows:
+
+Suppose we have two matrices A and B. For the multiplication to be valid, the number of columns in A must be equal to the number of rows in B. If A is a matrix of dimensions (m x n) and B is a matrix of dimensions ( n x p), then the resulting matrix C will be of dimensions (m x p).
+
+![image](https://github.com/Vicks0712/MatrixMultiplicationImplementations/assets/90756558/f746db08-c2fa-4121-9efd-1d4354fa51b9)
+
+
+The entry of the resulting matrix C in row i and column j is calculated as:
+```
+C[i][j] = sum(A[i][k] * B[k][j] for k in range(n))
+```
+
 ## Repository Contents
 
 This repository is divided into two projects:
@@ -34,6 +54,9 @@ Matrix segmentation and block-wise multiplication effectively leverage modern ha
 Matrix multiplication is a fundamental operation in linear algebra and is widely used in various scientific and engineering applications. The complexity of this calculation is based on the number of operations required to perform the multiplication.
 
 In the context of computational complexity notation, the "O" notation (Big O notation) is used to describe the algorithm's complexity. For matrix multiplication, the complexity is typically O(n^3), where "n" represents the size of the square matrices involved. This means that the time required for matrix multiplication increases rapidly as the size of the matrices grows.
+
+![image](https://github.com/Vicks0712/MatrixMultiplicationImplementations/assets/90756558/5cc62cef-6a2e-4865-aed0-ce297d4f1383)
+
 
 The O(n^3) complexity arises from the fact that when multiplying two n x n matrices, n^3 individual operations are necessary. Each element of the resulting matrix is computed by multiplying a row of the first matrix by a column of the second matrix and summing the products. This involves n multiplications and n-1 additions for each element, resulting in n * (n multiplications + n-1 additions) operations per element. Since there are n^2 elements in the resulting matrix, the total complexity is O(n^3).
 
