@@ -76,6 +76,13 @@ This test focuses on the multiplication of two MTX compressed matrices. It reads
 
 Please ensure you have the required dependencies and configurations in place to run these tests effectively.
 
+### Execution Time Parallel vs Sequential Methods
+The benchmark results are presented in the graphical representation below. Each bar represents the average execution time of the respective matrix multiplication operation type across different matrix sizes
+<p align="center">
+  <img src="https://github.com/Vicks0712/Matrix-Multiplication-Implementations/assets/90756558/2d9cfb53-8b79-41aa-9a0f-a3a1c01d1dec" alt="Benchmark Results" />
+</p>
+The benchmark clearly illustrates the comparative performance of each matrix multiplication operation type under different scenarios.
+
 ## Usage
 
 To utilize this project, follow these steps:
